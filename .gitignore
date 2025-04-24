@@ -1,0 +1,53 @@
+# LaTeX intermediate files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# Editors
+*.swp
+*.swo
+*~
+
+# Generated PDFs (optional — remove if you want to keep PDFs in repo)
+*.pdf
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Texstudio or TeXmaker settings
+*.synctex.gz
+*.synctex.gz(busy)
+*.xdy
+
+# latexmk
+latexmkrc
+
+# Subdirectories commonly used for build outputs
+_build/
+output/
+build/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
