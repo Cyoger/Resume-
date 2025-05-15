@@ -98,6 +98,9 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+% ---- in your preamble ------------------------------------
+\newcommand{\skillsep}{\hspace{0.6em}\textbar\hspace{0.6em}}
+% ----------------------------------------------------------
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,30 +121,6 @@
     \href{https://github.com/Cyoger}{\underline{Github}} $|$
     \href{https://akshatsharma.ca}{\underline{Personal Website}}
 \end{center}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Windsor}{Jan 2021 - April 2024}
-      {Bachelor of Computer Science Honours}{Windsor, ON}
-    \resumeItemListStart
-      \resumeItem{\textit{Specialization in Artificial Intelligence, Minor in Mathematics}}
-    \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, Python, Java, Go, C\#, SQL, JavaScript, HTML, CSS} \\
-     \textbf{Developer Tools}{: Git, Docker, VS Code, MSVC Build tools, Android Studio, SQLite, MySQL, React.JS, Node.JS, Arduino, STM32CubeIDE, CMake, Conan} \\
-     \textbf{Libraries \& Frameworks}{: PyTorch, NumPy, Matplotlib, TensorFlow, Keras, Sci-ki Learn, Boost, ImGui, OpenCV} \\
-    }}
- \end{itemize}
 
 
 %-----------EXPERIENCE-----------
@@ -173,6 +152,48 @@
   \resumeSubHeadingListEnd
 
 
+  %
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=10pt, itemsep=0.5pt, label={}]
+  \small
+  \item \textbf{Languages:}\enspace
+        C\skillsep
+        C++\skillsep
+        Python\skillsep
+        Java\skillsep
+        Go\skillsep
+        C\#\skillsep
+        SQL
+
+  \item \textbf{ML \& Vision:}\enspace
+        TensorFlow\skillsep
+        PyTorch\skillsep
+        Keras\skillsep
+        OpenCV\skillsep
+        NumPy\skillsep
+        SciKit-Learn\skillsep
+        Matplotlib
+
+  \item \textbf{DevOps:}\enspace
+        Git\skillsep
+        Docker\skillsep
+        GitHub Actions\skillsep
+        CMake\skillsep
+        Conan\skillsep
+        SQLite\skillsep
+        MySQL
+
+  \item \textbf{Embedded / HW:}\enspace
+        STM32CubeIDE\skillsep
+        FreeRTOS\skillsep
+        I\textsuperscript{2}C\skillsep
+        SPI\skillsep
+        Arduino
+\end{itemize}
+
+
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
@@ -185,7 +206,17 @@
           \resumeItemListEnd
   \resumeSubHeadingListEnd 
 
-
+  %-----------EDUCATION-----------
+  \section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Windsor}{Jan 2021 - April 2024}
+      {Bachelor of Computer Science Honours}{Windsor, ON}
+    \resumeItemListStart
+      \resumeItem{\textit{Specialization in Artificial Intelligence, Minor in Mathematics}}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd  
 
 %-----------VOLUNTEER AND AWARDS-----------
 \section{Volunteer and Awards}
