@@ -98,6 +98,9 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+% ---- in your preamble ------------------------------------
+\newcommand{\skillsep}{\hspace{0.6em}\textbar\hspace{0.6em}}
+% ----------------------------------------------------------
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,92 +115,125 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Akshat Sharma} \\ \vspace{1pt}
-    \small 519-992-7451$|$ \href{mailto:sharma8d@uwindsor.ca}{\underline{sharma8d@uwindsor.ca}} $|$ 
-    \href{https://www.linkedin.com/in/akshat8d/}{\underline{Linkedin}} $|$
-    \href{https://github.com/Cyoger}{\underline{Github}} $|$
-    \href{https://sharma8d.netlify.app}{\underline{Personal Website}}
+    \textbf{\Huge \scshape Akshat Sharma} \\ \vspace{6pt}
+    \small 519-992-7451$|$ \href{mailto:akshat@akshatsharma.ca}{\underline{akshat@akshatsharma.ca}} $|$ 
+    \href{https://www.linkedin.com/in/akshat8d/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Cyoger}{\underline{GitHub}} $|$
+    \href{https://akshatsharma.ca}{\underline{akshatsharma.ca}}
 \end{center}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Windsor}{\textbf{Jan. 2021 - April 2024}}
-      {Bachelor of Computer Science Honours}{}
-        \resumeItemListStart{}
-          \resumeItem{\textbf{Relevant coursework}: Data Structures and Algorithms, Operating Systems, Artificial Intelligence, Numerical Analysis, Compiler Design}
-          \resumeItem{\textbf{Minor \& Specialization}: Mathematics, Artificial Intelligence}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, Python, Java, Matlab, Go, C\#, SQL, JavaScript, HTML/CSS} \\
-     \textbf{Developer Tools \& Frameworks}{: Git, Doc  ker, VS Code, MSVC Build tools, Android Studio, SQLite, MySQL, React.JS, Node.JS } \\
-     \textbf{Libraries}{: NumPy, Matplotlib, TensorFlow, Keras, Sci-ki Learn, Boost, ImGui, OpenCV}
-    }}
- \end{itemize}
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Undergraduate Research Assistant}{Jan 2023 - Present}
-      {Institute of Diagnostic Imaging Research}{Windsor, ON}
-      \resumeItemListStart
-        \resumeItem{Conducted interdisciplinary research in deep learning (AutoEncoders, GANs, U-Nets) for Non-Destructive Ultrasound Evaluation, under \textbf{Dr. Roman Maev} and \textbf{Dr. Ryan Scott}.}
-        \resumeItem{Collaborated on the \textbf{Nadex Project} on deep learning model development in \textbf{TensorFlow}; curated datasets, and developed Python scripts (using \textbf{OpenCV}, \textbf{NumPy}, \textbf{Matplotlib}) for ultrasound image analysis in resistance spot weld evaluation.}
+  \resumeSubheading
+  {Software Developer}{Apr 2024 -- Present}
+  {\href{https://tessonics.com/}{\textbf{Tessonics}}}{Windsor, ON}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{C++} PLC simulator that mirrors real production traffic, accelerating integration tests for the \textbf{RIWA} platform.}
+    \resumeItem{Engineered a real-time Hall-effect current-detection algorithm in \textbf{C++}, achieving $<$\!10 ms end-to-end latency.}
+    \resumeItem{Added rule-based weld-analysis to the web backend in \textbf{Go}, letting customers drop in custom quality-control logic.}
+    \resumeItem{Authored backward-compatible 32-bit \textbf{C++} DLLs that expose a drop-in API, bridging legacy software to a modern \textbf{C++} inference server via WebSocket and delivering real-time deep-learning predictions with no code rewrites.}
+    \resumeItem{Built a Python-based Debian packaging pipeline and a self-hosted \textbf{GitHub Actions} runner, fully automating CI/CD and release distribution for the monorepo.}
+    \resumeItem{Designed an \textbf{ImGui} GUI for effortless JSON configuration, cutting technician setup time and reducing deployment errors across customer sites.}
+    \resumeItem{Automated cleaning, analysis, and visualization of \textbf{EEG} \& Hypnogram time-series data using \textbf{NumPy} and \textbf{matplotlib}.}
+    \resumeItem{Developed STM32 firmware (\textbf{C}) that integrates the \textbf{MCP4725} DAC and \textbf{RX8900} RTC for the SONYA sleep wearable.}
+    \resumeItem{Implemented a \textbf{Bluetooth Low Energy (BLE)} GATT service on the STM32 that lets users remotely adjust stimulation intensity and toggle operating modes on the sleep-wearable in real time.}
+    \resumeItem{Optimized \textbf{ISM330DHCX} IMU data capture via FIFO and I\textsuperscript{2}C, ensuring synchronized, real-time motion streams for onboard processing.}
+\resumeItemListEnd
 
-      \resumeItemListEnd
-    \resumeSubheading
-      {Software Developer}{Jan 2023 - Present}
-      {Tessonics}{Windsor, ON}
-      \resumeItemListStart
-        \resumeItem{Developed \textbf{C++} applications to test existing integrated deep learning models from the \textbf{RIWA} software platform.}
-        \resumeItem{Engineered a real-time event detection algorithm in C++ that processes data from a \textbf{Hall effect sensor}, achieving results transmission with a minimal delay window of as low as 10 ms.}
-        \resumeItem{Implemented interprocess communication using \textbf{Boost} (C++) to bridge 32-bit and 64-bit processes for sound physics algorithms, integrating new AI into a market-existing product. }
-        \resumeItem{Designed multiple GUI managers using \textbf{ImGui} and in-house libraries in order to modify configuration files with ease, also aided in creating scripts in order to create databases in \textbf{MySQL}. }
-      \resumeItemListEnd
+  \resumeSubheading
+    {Undergraduate Research Assistant}{Jan 2023 -- Apr 2024}
+    {\href{https://www.uwindsor.ca/idir/}{\textbf{Institute of Diagnostic Imaging Research}}}{Windsor, ON}
+    \resumeItemListStart
+      \resumeItem{Conducted interdisciplinary research in deep learning (AutoEncoders, GANs, U-Nets) for creation of Synthetic Welds using Generative Models for Non-Destructive Ultrasound Evaluation.}
+      \resumeItem{Collaborated on deep learning model development in \textbf{TensorFlow}; curated datasets, and developed Python scripts (using \textbf{OpenCV}, \textbf{NumPy}, \textbf{matplotlib}) for ultrasound image analysis in resistance spot weld evaluation.}
 
-    \resumeSubheading
-      {Teaching Assistant}{Sep 2022 - Present}
-      {University of Windsor}{Windsor, ON}
-      \resumeItemListStart
-        \resumeItem{Conducted labs for courses: \textbf{Intro to Algorithms(C programming)}, \textbf{Systems Programming}, \textbf{Discrete Mathematics}, \textbf{Intro to Web development}.}
-        \resumeItem{Conducted weekly labs with 40+ students in order to help them with assignments, aid in preparation of exams and explain concepts with supplementary material, resulting in improvements throughout the semester. }
-        \resumeItem{Hosted weekly office hours in order to conduct 1 on 1 sessions with struggling students. }
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
+  %
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=10pt, itemsep=0.5pt, label={}]
+  \small
+  \item \textbf{Languages:}\enspace
+        C\skillsep
+        C++17\skillsep
+        C++20\skillsep
+        Python\skillsep
+        Java\skillsep
+        Kotlin\skillsep
+        Go\skillsep
+        C\#\skillsep
+        SQL
+
+  \item \textbf{ML \& Vision:}\enspace
+        TensorFlow\skillsep
+        PyTorch\skillsep
+        Keras\skillsep
+        OpenCV\skillsep
+        NumPy\skillsep
+        SciKit-Learn\skillsep
+        matplotlib
+
+  \item \textbf{DevOps:}\enspace
+        Git\skillsep
+        Docker\skillsep
+        GitHub Actions\skillsep
+        CMake\skillsep
+        Conan\skillsep
+
+  \item \textbf{Database:}\enspace
+        PostgreSQL\skillsep
+        SQLite\skillsep
+        MySQL\skillsep
+        Redis
+
+  \item \textbf{Embedded / HW:}\enspace
+        STM32CubeIDE\skillsep
+        FreeRTOS\skillsep
+        I\textsuperscript{2}C\skillsep
+        SPI\skillsep
+        Arduino
+\end{itemize}
+
+
+% -----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-        {\href{https://github.com/Cyoger/CIFAR-100-Deep-learning-analysis}{\textbf{CIFAR-100 Analysis}} $|$ \emph{Python, Tensorflow, Keras, NumPy}}{Nov 2023 - Dec 2023}
+        {\href{https://github.com/Cyoger/CIFAR-100-Deep-learning-analysis}{\textbf{CIFAR-100 Analysis}} $|$ \emph{Python, TensorFlow, Keras, NumPy}}{Nov 2023 - Dec 2023}
           \resumeItemListStart
-            \resumeItem{Led a research team in an advanced AI concepts class to explore cutting-edge deep learning techniques, culminating in a perfect score of 100\% for the project.}
-            \resumeItem{Developed and applied a range of deep learning models using Python, including \textbf{Dense Neural Networks} and \textbf{Convolutional Neural Networks}. Innovatively integrated \textbf{Transfer Learning} with \textbf{ResNet-50} for efficient and accurate classification of the CIFAR-100 dataset.}
-            \resumeItem{Focused on the detailed analysis and optimization of the \textbf{CIFAR-100} dataset, a benchmark in computer vision studies, enhancing model accuracy and gaining deeper insights through sophisticated data processing techniques. Achieved a high accuracy of 80\% with our limited hardware, which is very difficult to obtain for this dataset.}
+            \resumeItem{Developed a comprehensive deep learning pipeline for CIFAR-100 dataset, achieving 80\% accuracy with CNNs and 85\% with ResNet-50.}
+            \resumeItem{Implemented data augmentation techniques to enhance model robustness and prevent overfitting.}
           \resumeItemListEnd
- 
+  \resumeSubHeadingListEnd 
+
+  %-----------EDUCATION-----------
+  \section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Windsor}{Jan 2021 -- Apr 2024}
+      {Bachelor of Computer Science Honours}{Windsor, ON}
+    \resumeItemListStart
+      \resumeItem{\textit{Specialization in Artificial Intelligence, Minor in Mathematics}}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd  
 
 %-----------VOLUNTEER AND AWARDS-----------
-\section{Volunteer and Awards}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     {\href{https://css.uwindsor.ca}{\textbf{Computer Science Society:}} {Event Coordinator 2023-2024} \\
-     \textbf{Dean's Honour Roll Recipient:} {2021,2022,2023} \\
-    }}
- \end{itemize}
+\section{Volunteer \& Awards}
+\resumeItemListStart
+  \resumeItem{\textbf{Event Coordinator, Computer Science Society} \hfill 2023 -- 2024\\
+              Organized events that served 100+ students each term and streamlined logistics to improve attendee experience.}
+  \resumeItem{\textbf{Dean's Honour Roll} \hfill 2021 -- 2024\\
+              University of Windsor}
+\resumeItemListEnd
 
 %-------------------------------------------
 \end{document}
