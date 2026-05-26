@@ -122,7 +122,6 @@
     \href{https://akshatsharma.ca}{\underline{akshatsharma.ca}}
 \end{center}
 
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -131,16 +130,12 @@
   {Software Developer}{Apr 2024 -- Present}
   {\href{https://tessonics.com/}{\textbf{Tessonics}}}{Windsor, ON}
   \resumeItemListStart
-    \resumeItem{Built a \textbf{C++} PLC simulator that mirrors real production traffic, accelerating integration tests for the \textbf{RIWA} platform.}
-    \resumeItem{Engineered a real-time Hall-effect current-detection algorithm in \textbf{C++}, achieving $<$\!10 ms end-to-end latency.}
-    \resumeItem{Authored backward-compatible 32-bit \textbf{C++} DLLs that exposes a drop-in API, bridging legacy software to a modern \textbf{C++} inference server via WebSocket and delivering real-time deep-learning predictions with no code rewrites.}
-    \resumeItem{Built a \textbf{Python}-based \textbf{Debian} packaging pipeline and self-hosted \textbf{GitHub Actions} runner, fully automating CI/CD and streamlining RIWA software deployment.}
-    \resumeItem{Contributed to the design and development of \textbf{PostgreSQL} database schemas from scratch for the RIWA platform, creating migration scripts and tooling to manage schema evolution across production environments.}
-    \resumeItem{Developed \textbf{Go}-based API mocking infrastructure to enable \textbf{React} web app development and load testing without hardware dependencies, accelerating frontend iteration with simulated \textbf{WebSocket} data streams.}
-    \resumeItem{Automated cleaning, analysis, and visualization of \textbf{EEG} \& Hypnogram time-series data using \textbf{NumPy} and \textbf{matplotlib}.}
-    \resumeItem{Developed \textbf{STM32} firmware (\textbf{C}) that integrates the \textbf{MCP4725} DAC and \textbf{RX8900} RTC for the SONYA sleep wearable.}
-    \resumeItem{Implemented a \textbf{Bluetooth Low Energy (BLE)} GATT service on the STM32 that lets users remotely adjust stimulation intensity and toggle operating modes on the sleep-wearable in real time.}
-    \resumeItem{Optimized \textbf{ISM330DHCX} IMU data capture via FIFO and I\textsuperscript{2}C, ensuring synchronized, real-time motion streams for onboard processing.}
+    \resumeItem{Eliminated hardware dependency for integration testing by building a \textbf{C++20} PLC simulator that mirrors real production traffic, enabling parallel CI runs and cutting integration test cycle time on the \textbf{RIWA} platform.}
+    \resumeItem{Reduced end-to-end sensor latency to $<$\!10\,ms by engineering a real-time Hall-effect current-detection algorithm in \textbf{C++20}, enabling sub-cycle fault detection on production lines.}
+    \resumeItem{Delivered zero-downtime legacy integration by authoring backward-compatible 32-bit \textbf{C++20} DLLs exposing a drop-in API over \textbf{WebSocket}, bridging legacy clients to a modern \textbf{C++20} deep-learning inference server with no code rewrites.}
+    \resumeItem{Cut manual release overhead to zero by building a \textbf{Python}-based \textbf{Debian} packaging workflow and self-hosted \textbf{GitHub Actions} runner, achieving continuous one-command deployment for all RIWA software.}
+    \resumeItem{Owned end-to-end \textbf{PostgreSQL} schema design for the RIWA platform, authoring migration scripts and tooling to track schema evolution reliably across development, staging, and production environments.}
+    \resumeItem{Accelerated frontend development by building \textbf{Go}-based \textbf{WebSocket} mock servers that replicate live hardware data streams, enabling UI load testing and iteration without physical device dependencies.}
 \resumeItemListEnd
 
 
@@ -155,8 +150,7 @@
   \small
   \item \textbf{Languages:}\enspace
         C\skillsep
-        C++17\skillsep
-        C++20\skillsep
+        C++17/20/23\skillsep
         Python\skillsep
         Java\skillsep
         Kotlin\skillsep
@@ -187,11 +181,8 @@
         Redis
 
   \item \textbf{Embedded / HW:}\enspace
-        STM32CubeIDE\skillsep
-        FreeRTOS\skillsep
         I\textsuperscript{2}C\skillsep
-        SPI\skillsep
-        Arduino
+        SPI
 \end{itemize}
 
 
@@ -199,11 +190,11 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-        {\href{https://github.com/Cyoger/charty}{\textbf{Charty}} $|$ \emph{Rust, WebSocket, Finnhub API}}{Jan 2026 - Present}
+        {\href{https://github.com/Cyoger/charty}{\textbf{Charty}} $|$ \emph{Rust, ratatui, Yahoo Finance API, Finnhub WebSocket}}{Jan 2026 - Present}
           \resumeItemListStart
-            \resumeItem{Built a terminal-based stock market analysis application in \textbf{Rust} featuring interactive candlestick charts and real-time price streaming via \textbf{WebSocket}.}
-            \resumeItem{Implemented multiple view modes including historical charts with configurable timeframes and live ticker/candle aggregation for real-time market data.}
-            \resumeItem{Designed an event-driven TUI architecture handling concurrent data fetching, WebSocket streaming, and responsive keyboard navigation.}
+            \resumeItem{Fetched historical OHLC data across 5 timeframes from Yahoo Finance v8 and streamed live trade ticks from Finnhub via \textbf{WebSocket} with exponential backoff reconnection (5 attempts, 2\,s--32\,s).}
+            \resumeItem{Decoupled the \textbf{WebSocket} producer from the UI via a \textbf{Tokio} \texttt{mpsc} channel, enabling fault-tolerant live streaming with recoverable/fatal error discrimination and graceful unsubscribe on exit.}
+            \resumeItem{Implemented a price alert system, watchlist, and market movers feed (top gainers, losers, most active) with pre/post-market session state detection.}
           \resumeItemListEnd
   \resumeSubHeadingListEnd 
 
@@ -215,6 +206,7 @@
       {Bachelor of Computer Science Honours}{Windsor, ON}
     \resumeItemListStart
       \resumeItem{\textit{Specialization in Artificial Intelligence, Minor in Mathematics}}
+      \resumeItem{Relevant Coursework: Operating Systems, Concurrent Programming, Data Structures \& Algorithms, Computer Networks, Database Systems}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd  
